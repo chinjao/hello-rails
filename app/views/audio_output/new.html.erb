@@ -1,0 +1,8 @@
+<%= form_for Audio.new do |f| %>
+  <%= f.label :author %>
+  <%= f.select :author, ["takeru","show","hikari","haruka","santa","bear"], class:"pub" %>
+  <%= f.label :script %>
+  <%= f.text_area :script %>
+  <%= f.label :emotion %>
+  <%= f.submit %>
+<% end %>

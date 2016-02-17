@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'audio_output/index'
+
+  get 'audio_output/show'
+
+  get 'audio_output/new'
+  post "audios" => "audio_output#create"
+
+  get 'tweets/index'
+
+  get 'tweets/show'
+
+  get 'tweets/new'
+  post "tweets" => "tweets#create"
+
   get 'users/index'
 
   get 'users/show/:username' => "users#show"
