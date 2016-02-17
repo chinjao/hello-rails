@@ -23,7 +23,7 @@ class AudioOutputController < ApplicationController
     @audio.script = params[:audio][:script]
     @audio.save
 
-    apikey = '514135756e796d533565725061755971417357664159615373383370674e48676c45624c5537776a795935'
+    apikey = ''
 
     endpoint = URI.parse('https://api.apigw.smt.docomo.ne.jp/voiceText/v1/textToSpeech')
     endpoint.query = 'APIKEY=' + apikey
